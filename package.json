@@ -1,0 +1,27 @@
+{
+  "name": "react-library-typescript",
+  "version": "1.0.0",
+  "description": "Angkor react typescript is a library free for devlopments.",
+  "main": "lib/index.js",
+  "types": "lin/index.d.ts",
+  "files": ["lib/**/*"],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["react component", "console log", "react library", "react ui"],
+  "author": "Vina Leam <leamvina48@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kwinelex/angkor-react-component-typescript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kwinelex/angkor-react-component-typescript/issues"
+  },
+  "homepage": "https://github.com/kwinelex/angkor-react-component-typescript#readme",
+  "devDependencies": {
+    "typescript": "5.2.2"
+  }
+}
