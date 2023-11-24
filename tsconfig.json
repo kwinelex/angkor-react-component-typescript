@@ -1,14 +1,21 @@
 {
-    "compilerOptions": {
-        "module": "CommonJS",
-        "target": "ES6",
-        "declaration": true,
-        "outDir": "./lib",
-        "strict": true
-    },
-    "include": ["src"],
-    "exclude": [
-        "node_modules",
-        "**/__tests__/*"
-    ]
+  "compilerOptions": {
+    "jsx": "react",
+    "strict": true,
+    "target": "ES6",
+    "types": ["node", "jest"],
+    "module": "ES2020",
+    "declaration": true,
+    "outDir": "dist/esm",
+    "skipLibCheck": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["ES6", "ES7", "ES2016", "ES2017", "DOM", "DOM.Iterable", "ESNext"]
+  },
+  "include": ["src", "src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["node_modules", "tests", "dist", "**/.test.tsx"]
 }
