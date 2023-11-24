@@ -31,4 +31,5 @@ export interface BaseInputProps extends React.PropsWithChildren {
   placeholder?: string | undefined;
   style?: React.CSSProperties | undefined;
   size?: InputSize | undefined;
+  disabled?: boolean;
 }

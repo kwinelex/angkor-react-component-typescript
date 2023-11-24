@@ -19,6 +19,6 @@ describe.skip("Testing on Button component", () => {
 describe("Testing on Input component", () => {
   test("provide name to input element", () => {
     render(<Input htmlType="text" name='Test' />);
-    expect(screen.getByRole("textbox")).toBeDefined();
+    expect(screen.getByRole("input", {name: "Test"})).toBeDefined();
   });
 });
