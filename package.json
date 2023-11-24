@@ -5,21 +5,23 @@
   "main": "dist/cjs/index.d.ts",
   "module": "dist/esm/index.d.ts",
   "files": [
-    "dist/esm"
+    "dist",
+    "LICENSE",
+    "README.md"
   ],
   "scripts": {
     "prepare": "npm run build",
-    "test": "jest --config jestconfig.json",
+    "test": "jest --config jest.config.json",
+    "coverage": "jest --config jest.coverage.json",
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
+    "prepublishOnly": "npm test && npm run prettier && npm run lint",
     "build": "rm -rf dist/ && tsc && tsc --module CommonJS --outDir dist/cjs",
     "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\""
   },
   "keywords": [
-    "react component",
-    "typescript react library",
-    "react library",
-    "react ui",
-    "component"
+    "typescript",
+    "react",
+    "angkor wat"
   ],
   "author": "Vina Leam <leamvina48@gmail.com>",
   "license": "MIT",
@@ -54,8 +56,5 @@
   },
   "peerDependencies": {
     "react": "^18.2.0"
-  },
-  "dependencies": {
-    "@types/node": "^20.9.5"
   }
 }

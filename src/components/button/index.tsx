@@ -9,7 +9,7 @@ export const Button: React.FunctionComponent<BaseButtonProps> = (props) => {
 
   return (
     <button style={styles} {...props}>
-      {children || "primary"}
+      {children}
     </button>
   )
 }
